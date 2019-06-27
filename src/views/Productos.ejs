@@ -1,0 +1,39 @@
+
+<% include partials/header.ejs %>
+
+
+
+
+
+
+<% if(data){ %>
+  <% for (var i = 0; i < data.length; i++){ %>
+
+
+    <div class="productos">
+      <div class="imgProd">
+        <img src="<%= data[i].urlimg %>">
+      </div>
+      <div class="Des_Pre">
+        <p><%= data[i].descripcion %> </p>
+      </div>
+      <div class="Precio">
+        <p>$<%= data[i].precio %> </p>
+      </div>
+      <div class="btnCarrito">
+        <button>
+          ADD TO CART
+        </button>
+      </div>
+      </div>
+      <% } %>
+  <% } %>
+
+
+
+
+
+
+  <% include partials/footer.ejs %>
+  
+  

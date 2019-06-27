@@ -1,0 +1,137 @@
+
+
+	<script src="../style/slider/js/jquery.nivo.slider.js"></script>
+
+
+    <!-- Link Swiper's CSS -->
+    
+      <script type="text/javascript"> 
+          $(window).on('load', function() {
+              $('#slider').nivoSlider(); 
+          }); 
+  </script>
+          <div class="main">
+  
+  
+          <div class="slider-wrapper theme-mi-slider">
+                  <div id="slider" class="nivoSlider">     
+                      <img src="../style/slider/img/1.jpg" class="imagen" alt="" title="#htmlcaption1" />    
+                      <img src="../style/slider/img/2.jpg" class="imagen" alt="" title="#htmlcaption2" />    
+                      <img src="../style/slider/img/3.jpg" class="imagen" alt="" title="#htmlcaption3" />    
+  
+                  </div> 
+                  <div id="htmlcaption1" class="nivo-html-caption">     
+                     
+                  </div>
+                  <div id="htmlcaption2" class="nivo-html-caption">     
+                      <h1>Acerca de Nosotros</h1>
+                  </div>
+                  <div id="htmlcaption3" class="nivo-html-caption">     
+                      <h1>Gracias por visitar</h1>
+                  </div>
+          
+          </div>
+  
+  
+            <div class="swiper-container">
+              <div class="swiper-wrapper"> 
+                <div class="swiper-slide">
+                      <div class="imgSl" >
+                         <img  src="../style/imagenes/productos/Joyas/collar2.jpg">
+                    </div>
+                       <div class="details">
+                       <h3>Accesorios</h3>
+  
+                       </div>
+             </div>
+             <div class="swiper-slide">
+                      <div class="imgSl" >
+                         <img  src="../style/imagenes/productos/Ropa/blusa.jpg">
+                    </div>
+                       <div class="details">
+                       <h3>Ropa</h3>
+  
+                       </div>
+             </div>
+             <div class="swiper-slide">
+                      <div class="imgSl" >
+                         <img  src="../style/imagenes/productos/adornos/buhos.jpg">
+                    </div>
+                       <div class="details">
+                       <h3>Adornos</h3>
+  
+                       </div>
+             </div>
+             <div class="swiper-slide">
+                      <div class="imgSl" >
+                         <img  src="../style/imagenes/productos/utensilios/tenedor.jpg">
+                    </div>
+                       <div class="details">
+                       <h3>Utensilios</h3>
+  
+                       </div>
+             </div>
+  
+                 <div class="swiper-slide">
+                      <div class="imgSl" >
+                         <img  src="../style/imagenes/productos/muebles/silla.jpg">
+                    </div>
+                       <div class="details">
+                       <h3>MUEBLES</h3>
+  
+                       </div>
+             </div>
+       </div>
+  
+  
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  
+  <script src="../style/js/swiper.min.js"></script>
+    <!-- Swiper JS -->
+     <script>
+      var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 4  ,
+        spaceBetween: 30,
+        slidesPerGroup: 2,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            1100:{
+              slidesPerView: 4,
+            spaceBetween: 20,
+  
+          },	
+          770:{
+              slidesPerView: 3,
+            spaceBetween: 20,
+            slidesPerGroup: 3,
+          },	
+          640: {
+            slidesPerView: 1.5,
+            spaceBetween: 20,
+             slidesPerGroup: 1.5,
+          },
+          320: {
+            slidesPerView: 1.5,
+            spaceBetween: 20,
+            slidesPerGroup: 1.5,
+          }
+        }
+      });
+       
+  
+
+    </script>
+  

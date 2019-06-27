@@ -1,0 +1,79 @@
+.containerAdd{
+	width: 100%;
+	height: 100%;
+	
+
+}
+	.contentAdd{
+		display: inline-block;
+background-color: #b7d2ff;
+	margin-left: 20px;
+	width: 500px;
+	height: 600px;
+	border-radius: .5em;
+	padding: 20px;
+	float: left
+}
+
+.table{
+	text-align: center;
+	width: 50%;
+	margin: 20px;
+	border: black 1px solid;
+	display: inline-block;
+	border-radius: 1em;
+	float: left
+
+}
+textarea {
+  resize: none;
+}
+.desProd{
+
+	width:200px;
+	height: 40px;
+	border-radius: 1em;
+	display: block;
+	margin:20px;
+}
+.texDes{
+
+	border-radius: 1em;
+		margin: 20px;
+}
+.desCategoria{
+	width:200px;
+	height: 40px;
+	border-radius: 1em;
+	display: block;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+.descImg{
+	display: block;
+	margin-left: 20px;
+	}
+.btnIMG{
+	margin: 20px;
+	width: 100px;
+	height: 40px;
+	display: block;
+	border-radius: 1em;
+	background-color: #004fd3;
+	color: white;
+	font-weight: bold;
+}
+
+/*STYLE OF THE  TABLE*/
+.nombre{
+	width: 150px;
+	padding:10px;
+}
+.addDescrip{
+	width: 200px;
+	padding:20px;
+}
+.addprod{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}

@@ -1,0 +1,71 @@
+<% include partials/header %>
+
+
+
+<form action="/nuevoProducto" method="POST" enctype="multipart/form-data">
+    <div class="containerAdd">
+      <div class="contentAdd">
+        <div class="datosAdd"> 
+          <input type="text" class="desProd" name="codigo" placeholder="  Ingresa codigo">
+          <input type="text" class="desProd" name="nombre" placeholder="  Escribe el nombre del producto">
+            <input type="number"  class="desProd" name="existencia" placeholder=" Cantidad">
+            <input type="text" class="desProd" name="precio" placeholder="  Ingresa el precio">
+  
+          <input type="text" name="descripcion" class="desProd" placeholder=" Descripción del producto">
+       <select class="desCategoria" name="categoria">
+       
+        
+     
+      <option class="desCategoria" value="ACCESORIOS">ACCESORIOS</option>
+      <option value="CAJAS">CAJAS</option>
+      <option value="CUADROS">CUADROS</option>
+      <option value="FIGURAS">FIGURAS</option>
+      <option value="HOGAR">HOGAR</option>
+        <option value="MANTELES">MANTELES</option>
+      <option value="PRODUCTOS">PRODUCTOS</option>
+      <option value="RELIGIOSOS">RELIGIOSOS</option>
+        <option value="ROPA">ROPA</option>
+    </select>
+    
+          <input type="file" class="descImg" name="image">
+          <button class="btnIMG" type="submit">Subir Producto</button>
+          
+        </div> 
+      </div>
+   
+    </form>
+    <div class="table">
+      <table >
+        <thead>
+          <tr>
+            <th class="nombre">Clave</th>
+            <th class="nombre">Nombre</th>
+            <th class="addDescrip">Descripción</th>
+            <th class="nombre">Opciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% if(data){ %>
+            <% for (var i = 0; i < data.length; i++){ %>
+              <tr>
+                <td class="addprod"><%= data[i].codigo %></td>
+                <td class="addprod"><%= data[i].nombre %></td>
+                <td class="addprod"><%= data[i].descripcion %> </td>
+                
+                <td>
+                  <a href="<%= data[i].urlimg%>"" target="_blank">Imagen</a>
+                  <a href="/nuevoProducto/<%= data[i].id%>">Delete</a>
+                  
+                </td>
+               
+              </tr>
+                
+                <% } %>
+            <% } %>
+          
+          
+        </tbody>
+      </table>
+    </div>
+  </div>
+<% include partials/footer.ejs %>

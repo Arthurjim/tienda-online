@@ -1,0 +1,58 @@
+.productos{
+	display: inline-block;
+	width: 300px;
+	height: 390px;
+	background-color: white;
+	 box-shadow: 2px 2px 10px #666;  
+	margin-left: 25px;
+	margin-bottom: 15px;
+	
+	overflow: hidden;	
+}
+.productos .imgProd{
+	height: 70%;
+	padding-top: 10px;
+	width: 100%;
+	height: 290px;
+	 overflow: hidden;
+-webkit-transition:all .6s ease; /* Safari y Chrome */
+-moz-transition:all .6s ease; /* Firefox */
+-o-transition:all .6s ease; /* IE 9 */
+-ms-transition:all .6s ease; /* Opera */
+}
+
+.productos:hover .imgProd {
+	overflow: hidden;
+	-webkit-transform:scale(1.25);
+-moz-transform:scale(1.25);
+-ms-transform:scale(1.25);
+-o-transform:scale(1.25);
+transform:scale(1.25);
+opacity: .8;
+}
+.productos .imgProd img{
+	overflow: hidden;
+	width: 100%;
+}
+.productos .Des_Pre{
+	padding-top: 20px;
+	text-align: center;
+}
+.productos .Precio{
+	padding-top: 20px;
+	text-align: center;
+	font-size: 17px;
+	color: red;
+
+}
+.btnCarrito{
+	margin: 120px;
+	text-align: center;
+
+}
+.btnCarrito button{
+	width: 120px;
+	height:35px;
+	border-radius: 1em;
+	background-color: chartreuse;
+}
